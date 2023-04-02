@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,20 +12,51 @@
 <body>
     <div id="app">
         <div class="nav">
-            <div class="brand">
-                <img src="" alt="">
-            </div>
+            <img src="./assets/img/brand-wordmark-2.svg" alt="" class="brand__wordmark">
             <div class="search">
-
+                <img src="./assets/img/i-search.png" class="search__ico">
+                <input type="search" id="search" placeholder="Procurar">
+            </div>
+            <div class="date">
+                <span class="material-symbols-rounded time__ico">
+                    schedule
+                </span>
+                <p class="time" id="time">
+                    <!-- JS ESCREVE A DATA -->
+                </p>
             </div>
         </div>
         <div class="content">
-
+            <div class="tabs">
+                <button id="btn__1">
+                    <span class="material-symbols-rounded">
+                        school
+                    </span>
+                    Curso
+                </button>
+                <button id="btn__2">
+                    <span class="material-symbols-rounded">
+                        groups
+                    </span>
+                    Turma
+                </button>
+                <button id="btn__3">
+                    <span class="material-symbols-rounded">
+                        collections_bookmark
+                    </span>
+                    Unidade Curricular
+                </button>
+            </div>
+            <div class="schedule__container">
+                <!-- JS ESCREVE A DATA -->
+            </div>
         </div>
-        <div class="footer">
-
-        </div>
+        <footer class="footer">
+            <p class="footer__label">
+                Desenvolvido por Manoel, Melissa e Talita ©2023
+            </p>
+        </footer>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
