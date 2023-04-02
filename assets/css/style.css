@@ -101,7 +101,7 @@ body{
     grid-template-rows: 4rem auto;
     margin: 2rem;
     width: 90%;
-    height: 90vh;
+    min-height: 90vh;
     background-color: var(--gray-0);
     border-radius: var(--rounded8);
     box-shadow: var(--shadow-dark);
@@ -241,15 +241,35 @@ button:focus{
     color: var(--gray-0);
 }
 
-.schedule__container{
+.schedule__container{ /* CONTAINER */
     border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline: 2rem;
+}
+
+.agenda__row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(2, 3fr) repeat(2, 2fr);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray-30);
+}
+
+.agenda__row .agenda__label{ /* celulas com a legenda*/
+    font-size: var(--size-nm);
+    font-weight: var(--semibold);
+}
+
+.agenda__row .agenda__data{ /* celulas com os dados */
+
 }
 
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-inline: var(--p24);
+    padding: var(--p24) 0;
     font-size: var(--size-sm);
     background-color: var(--gray-5);
 }
